@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        dgold: "#D7A440",
+        lgold: "#ECBE66",
+      },
+      fontFamily: {
+        'ibm': "var(--font-ibm)", // Add this line
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
