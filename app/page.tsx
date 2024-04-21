@@ -15,7 +15,7 @@ export default function Home() {
           <div className="absolute h-full w-full">
             
             <div className="relative h-full w-full flex flex-col">
-              <div className="p-6 flex flex-row justify-between">
+              <div className="p-4 sm:p-6 flex flex-row justify-between">
                 <a href="/">
                   <div className="text-zinc-900 text-4xl italic">
                     NOVUS
@@ -28,9 +28,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="p-12 w-full flex flex-col items-center">
+              <div className="p-4 sm:p-12 w-full flex flex-col items-start sm:items-center ">
                 <div className="flex flex-col justify-right">
-                  <div className=" text-7xl font-medium text-zinc-900">
+                  <div className="text-3xl sm:text-7xl font-medium text-zinc-900">
                     Community for the ambitious.
                   </div>
                   <div  className="pt-6">
@@ -43,7 +43,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col grow justify-end">
+              <div className="hidden sm:flex flex-col grow justify-end">
                 <img draggable="false" className="h-100 pt-24 bg-gradient-to-t from-white via-white to-transparent" src="/gang.svg"></img>
                 </div>
             </div>
