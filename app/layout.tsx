@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { EB_Garamond, IBM_Plex_Mono} from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const gara = EB_Garamond({ subsets: ["latin"] ,
+variable: '--font-gara',
+});
+const ibm = IBM_Plex_Mono({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-ibm',
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${gara.className} ${ibm.variable}`}>{children}</body>
     </html>
   );
 }
