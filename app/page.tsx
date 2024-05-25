@@ -33,13 +33,21 @@ export default function Home() {
                   <div className="text-3xl sm:text-7xl font-medium text-zinc-900">
                     Community for the ambitious.
                   </div>
-                  <div  className="pt-6">
+                  <div  className="pt-6 w-full flex flex-col sm:flex-row items-start justify-between">
                     <a draggable="false" href="https://lu.ma/novus">
                       <button  type="button" className="group text-gray-900 bg-dgold transition duration-150 hover:bg-zinc-900 rounded px-4 py-2 flex flex-row items-center">
                         <div className="text-center text-2xl font-ibm text-white">Attend</div>
                             <Image className="group-hover:-translate-y-0.5 transition duration-150 group-hover:translate-x-0.5 ml-2 mt-0.5 fill-white" src="/arrow.svg" width={25} height={25} alt="arrow"/>
                       </button>
                     </a>
+                    <div className="p-1 pt-4 sm:pt-0 rounded bg-white  flex flex-row space-x-4">
+                      <a draggable="false" href="https://x.com/NovusOrg">
+                          <div className="text-center text-zinc-400 text-sm font-ibm underline text-white">twitter</div>
+                      </a>
+                      <a draggable="false" href="https://www.projectnovus.org/">
+                          <div className="text-center text-zinc-400 text-sm font-ibm underline text-white">login</div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

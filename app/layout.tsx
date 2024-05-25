@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { EB_Garamond, IBM_Plex_Mono} from "next/font/google";
+import { Cormorant_Garamond , IBM_Plex_Mono} from "next/font/google";
 import "./globals.css";
 
-const gara = EB_Garamond({ subsets: ["latin"] ,
-variable: '--font-gara',
+const gara = Cormorant_Garamond({ 
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-gara',
 });
 const ibm = IBM_Plex_Mono({
   weight: '400',
